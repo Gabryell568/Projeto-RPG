@@ -1,0 +1,169 @@
+@charset "UTF 8";
+
+@font-face {
+    font-family: 'Roboto-Condensado' ;
+    src: url(fonts/Roboto-BoldCondensed.ttf);
+}
+@font-face {
+    font-family:'Roboto';
+    src: url(fonts/Roboto-Regular.ttf), url(fonts/Roboto-Black.ttf),url(fonts/Roboto-BlackItalic.ttf),url(fonts/Roboto-Bold.ttf),url(fonts/Roboto-BoldCondensed.ttf),url(fonts/Roboto-BoldCondensedItalic.ttf),url(fonts/Roboto-BoldItalic.ttf),url(fonts/Roboto-Condensed.ttf),url(fonts/Roboto-CondensedItalic.ttf),url(fonts/);
+}
+:root{
+    --cor0: #011640;
+    --cor1: #46268C;
+    --cor2: #BF4588;
+    --cor3: #2976A6;
+    --cor4: #0D0D0D;
+
+    --fonte-padrao: 'Roboto';
+    --fonte-titulo: 'Roboto-Condensado';
+}
+body{
+    background-image: linear-gradient(to bottom, var(--cor0),var(--cor3));
+}
+header{
+    background-image: linear-gradient(to bottom,var(--cor0),var(--cor4));
+    margin: -8px;
+    max-height: 30%;
+}
+header > img{
+    width: 150px;
+}
+nav > a{
+    text-decoration: none;
+    margin: 0px 30px;
+    color: white;
+    font-size: 1.5em;
+    font-family: var(--fonte-titulo);
+}
+nav > a:hover{
+    color: rgb(255, 255, 0);
+}
+main{
+    width: 700px;
+    margin:auto;
+    padding: 10px;
+}
+footer{
+    background-color: var(--cor4);
+    color: white;
+   text-align: center;
+   font-size: 0.8em;
+   font-family: var(--fonte-titulo);
+   margin: -8px;
+   padding: 5px;
+}
+footer > p{
+    margin: 0px;
+}
+article.sobre-descrição {
+    margin: auto;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+.navegação{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.imagem-principal{
+    margin-top: 50px;
+    box-shadow: 3px 5px 9px rgba(0, 0, 0, 0.555);
+}
+.Titulo-Principal{
+    font-family: var(--fonte-titulo);
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+}
+#linha{
+    width: 900px;
+    height: 1px;
+    margin: 0px -100px;
+    background-color: white;
+}
+.sobre-descrição{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-content:center;
+    font-family: var(--fonte-padrao);
+    color: white;
+    width: 600px;
+    text-align: justify;
+}
+.Campanhas{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: stretch;
+    align-items:stretch;
+    width: 1000px;
+    margin: 0px -160px;
+    padding: 20px;
+}
+.Campanhas >h1{
+    text-align: center;
+    font-size: 2.5em;
+    color: white;
+    font-family: var(--fonte-titulo);
+}
+.borda{
+    border: 3px solid rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.521);
+    border-radius: 10px;
+}
+.Campanhas-subtitulo{
+    font-size: 1.3em;
+    color: white;
+    font-family: var(--fonte-titulo);
+    text-align: center;
+}
+.Mesas01{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+#circle{
+    background-color: white;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.playlist{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.playlist >p{
+    background-color:var(--cor2);
+    color: white;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 30px;
+
+}
+.playlist >a{
+    color: white;
+    font-size: 1em;
+    text-decoration: none;
+}
+.playlist >a:hover{
+    color: yellow;
+}
