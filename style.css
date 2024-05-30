@@ -167,3 +167,15 @@ article.sobre-descrição {
 .playlist >a:hover{
     color: yellow;
 }
+#Playlist1{
+    position: absolute;
+    left: 429px;
+}
+#Playlist2{
+    position: absolute;
+    left:794px;
+}
+#Playlist3{
+    position: absolute;
+    left: 1147px;
+}
