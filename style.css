@@ -134,36 +134,17 @@ article.sobre-descrição {
     justify-content: space-around;
     align-items: center;
 }
-#circle{
-    background-color: white;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 .playlist{
     position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-around;
-    align-items: stretch;
-}
-.playlist >p{
-    background-color:var(--cor2);
-    color: white;
-    margin-top: 20px;
-    margin-right: 40px;
-    margin-left: 30px;
-
 }
 .playlist >a{
     color: white;
     font-size: 1em;
     text-decoration: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
 }
 .playlist >a:hover{
     color: yellow;
@@ -174,7 +155,7 @@ article.sobre-descrição {
 }
 #Playlist2{
     position: absolute;
-    left:45%;
+    left:44%;
 }
 #Playlist3{
     position: absolute;
