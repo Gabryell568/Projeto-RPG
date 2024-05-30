@@ -145,6 +145,7 @@ article.sobre-descrição {
     align-items: center;
 }
 .playlist{
+    position: relative;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -169,13 +170,13 @@ article.sobre-descrição {
 }
 #Playlist1{
     position: absolute;
-    left: 429px;
+    left:7%;
 }
 #Playlist2{
     position: absolute;
-    left:794px;
+    left:45%;
 }
 #Playlist3{
     position: absolute;
-    left: 1147px;
+    left: 80%;
 }
