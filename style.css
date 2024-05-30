@@ -149,7 +149,7 @@ article.sobre-descrição {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: stretch;
 }
 .playlist >p{
     background-color:var(--cor2);
