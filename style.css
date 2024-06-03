@@ -25,6 +25,12 @@ header{
     background-image: linear-gradient(to bottom,var(--cor0),var(--cor4));
     margin: -8px;
     max-height: 30%;
+    position: relative;
+}
+header > img > nav > a{
+    position: static;
+    top: 0;
+    background-image: linear-gradient(to bottom, var(--cor0), var(--cor3));
 }
 header > img{
     width: 150px;
