@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="estilo/media-query.css">
     <title>Age Of Legends</title>
 </head>
-<body>
+<body onresize="mudouTamanho()">
     <header>
         <div class="container">
             <img src="imagens/Logosite-png.png" id="logo" alt="">
@@ -37,23 +37,43 @@
                 <p>Essa historia começa com um servidor no discord, um rapaz chamado João Oliveira conhecido como "Jota", publica sobre vagas para uma mesa baseada em ordem paranormal.</p>
             </article>
             <article class="Campanhas">
-                    <h1>Mesas</h1>
+                    <h1 class="titulo-principal">Mesas</h1>
                     <picture class="Mesas01">
-                        <a href="https://www.youtube.com/watch?v=IeBxstQhUvg&t=9685s" target="_blank" rel="external"><img src="imagens/Marcas do Futuro.png" class="borda imagem-marcas" width="80%" alt=""></a>
+                        <a href="https://www.youtube.com/watch?v=IeBxstQhUvg&t=9685s" target="_blank" rel="external"><img src="imagens/Marcas do Futuro.png" class="borda imagem-marcas" width="80%" alt="" id="marcas-do-futuro"></a>
                         <br>
-                        <a href="https://www.youtube.com/watch?v=VAmP8w8ZkIw&t=7700s" target="_blank" rel="external"><img src="imagens/Laminas do Vazio.png" class="borda" width="80%" alt=""></a>
-                        <a href="https://www.youtube.com/watch?v=eH-bwXFStQ8" target="_blank" rel="external"><img src="imagens/Abyssal.jpg" width="100%" class="borda" alt=""></a>
+                        <p>
+                            Marcas do futuro foi a primeira mesa com a proposta de recentes agentes da ordem trombarem com desaparecimento de crianças, foi protagonizado por 8 players e tem duração de 6 episodios. 
+                        </p>
+                        <div class="botão-playlist">
+                            <a href="https://www.youtube.com/playlist?list=PLHlux2iJxDXhqBO6V7wuPY9Td7IGoxFT8" target="_blank" rel="external" class="Playlist"><p>Ver Playlist Completa</p></a>
+                        </div>
+
+                        <a href="https://www.youtube.com/watch?v=VAmP8w8ZkIw&t=7700s" target="_blank" rel="external"><img src="imagens/Laminas do Vazio.png" class="borda" width="80%" alt="" id="laminas"></a>
+                        <br>
+
+                        <p>
+                            Sinopse: Vocês são agentes de uma pequena organização chamada: P.R.O.L.E, vocês agem com a ajuda do governo e são como policiais federais. Entretanto, por baixo dos panos do governo, vocês na verdade trabalham em prol de proteger as pessoas do paranormal e arquivar esses dados para situações futuras. 
+                            Em algum tempo 
+                            Um ocultista que estava sendo investigado por vocês, foi morto misteriosamente dentro do manicômio de Santa luzia. Tendo seus olhos arrancados e alguns membros do corpo quebrados, ele foi deixado em seu quarto sem nenhum vestígio de pegadas  ou digitais. 
+                            Sua missão, é descobrir quem realmente fez isso e porque. 
+                        </p>
+                        
+                        <div class="botão-playlist"><a href="https://www.youtube.com/playlist?list=PLzDv1LUKeF9QpalfHO_byssgG0d7x4-P7" target="_blank" rel="external" class="Playlist"><p>Ver Playlist Completa</p></a></div>
+                        
+                        <a href="https://www.youtube.com/watch?v=eH-bwXFStQ8" target="_blank" rel="external"><img src="imagens/Abyssal.jpg" width="80%" class="borda" alt="" id="abyssal"></a>
+                        <br>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima hic nesciunt unde animi veritatis, omnis similique laborum. Esse, dolor minus placeat, dolore, dicta blanditiis architecto ipsa id nostrum libero minima. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus similique vero sequi, rerum nobis consectetur ab ad neque minus saepe possimus nostrum harum expedita enim illum earum veniam quas sint?
+                        </p>
+
+                        <div class="botão-playlist"><a href="https://www.youtube.com/playlist?list=PLjpcJM56rQC2mvktmQi47svhfspnbonVq" target="_blank" rel="external" class="Playlist"><p>Ver Playlist Completa</p></a></div>
                     </picture>
-                    <aside class="playlist">
-                        <a href="https://www.youtube.com/playlist?list=PLHlux2iJxDXhqBO6V7wuPY9Td7IGoxFT8" target="_blank" rel="external" id="Playlist1"><p>Ver Playlist Completa</p></a>
-                        <a href="https://www.youtube.com/playlist?list=PLzDv1LUKeF9QpalfHO_byssgG0d7x4-P7" target="_blank" rel="external" id="Playlist2"><p>Ver Playlist Completa</p></a>
-                        <a href="https://www.youtube.com/playlist?list=PLjpcJM56rQC2mvktmQi47svhfspnbonVq" target="_blank" rel="external" id="Playlist3"><p>Ver Playlist Completa</p></a>
-                    </aside>
+                   
             </article>
         </section>
         <section>
             <article>
-                <h1 class="Titulo-Principal">Criação</h1>
+                <h1 class="titulo-principal">Criação</h1>
                 <div id="linha"></div>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolor ut magni, voluptas minus nobis nam error nisi eum asperiores voluptates. Odio amet ipsum, dolorum delectus assumenda commodi dolores recusandae?</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse consequuntur tempora nemo voluptatum! Est, veniam eius. Suscipit eaque fugiat, animi commodi optio corrupti tempora. Accusamus aspernatur tenetur exercitationem accusantium neque.</p>
@@ -65,6 +85,14 @@
         <p>Site Criado por Gabrizzas</p>
     </footer>
     <script>
+        function mudouTamanho(){
+            if (window.innerWidth >= 768){
+            itens.style.display ='block'
+        }else{
+            itens.style.display ='none'
+        }
+    }
+
         function clickMenu(){
             if (itens.style.display == 'block'){
                 itens.style.display = 'none' 

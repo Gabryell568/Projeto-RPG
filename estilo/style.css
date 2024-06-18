@@ -33,9 +33,6 @@ html{
     height: 0px;
     width: 0px;
 }
-header div.container{
-    
-}
 header{
     width: 100vw;
     height: 15%;
@@ -74,18 +71,24 @@ menu > ul > li a:hover{
 }
 
 main{
-    width: 90vw;
-    background-color: rgba(201, 199, 199, 0.733);
     margin: auto;
     border-radius: 10px;
     margin-top: 10px;
+    padding: 10px;
+}
+p{
+    display: block;
+    margin: auto;
+    color: white;
+    text-align: justify;
+    
 }
 main img#imagem-principal{
     display: block;
     margin: auto;
     padding: 30px;
 }
-section > h1.titulo-principal{
+ h1.titulo-principal{
     text-align: center;
     padding: 10px;
     font-size: 2em;
@@ -96,4 +99,34 @@ article > p{
     text-align: justify;
     padding: 10px;
     margin-bottom: 10px;
+}
+#marcas-do-futuro{
+    display: block;
+    margin: auto;
+}
+#laminas{
+    display: block;
+    margin: auto;
+}
+#abyssal{
+    display: block;
+    margin: auto;
+}
+div.botão-playlist{
+    display: block;
+    margin: auto;
+    background-color: #2976A6;
+    width: 160px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+div.botão-playlist:hover{
+    background-color: #011640;
+}
+.Playlist{
+    text-decoration: none;
+    text-align: center;
+    color: white;
 }
