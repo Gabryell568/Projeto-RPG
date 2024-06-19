@@ -39,7 +39,7 @@ header{
     background-color:var(--cor0);
 }
 header img#logo{
-    width: 100px;
+    width: 12%;
     display: block;
     margin: auto;
 }
